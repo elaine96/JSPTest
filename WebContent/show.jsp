@@ -41,7 +41,7 @@
 				String sql="select * from newses";
 				ResultSet rs = sta.executeQuery(sql);
 				while(rs.next()){
-					rowCount=rs.getInt(1);
+					rowCount++;
 				}
 				if(rowCount%pageSize==0){
 					pageCount=rowCount/pageSize;
@@ -66,16 +66,16 @@
 							<%= ftd.format(date) %>
 						</p>
 					</div>
-					<a>
+					<form action="view.jsp" method="post">
+						<input type="hidden" value="<%= rs1.getString("id") %>" name="id">
 						<p class="title">
 							<%= rs1.getString("title") %>
 						</p>
-					</a>
-					<a>
 						<div class="msgs">
 							<%= rs1.getString("content") %>
 						</div>
-					</a>
+						<button class="btn btn-info" style="float:left;">详情</button>
+					</form>
 					<div class="indexbtn">
 						<form action="doDelete.jsp" method="post">
 							<input type="hidden" value="<%= rs1.getString("id") %>" name="id">

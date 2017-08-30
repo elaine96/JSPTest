@@ -33,12 +33,12 @@
 			
 			<label class="col-md-2 top">正文：</label>
 			<div class="col-md-10 top">
-				<textarea class="form-control textarea" name="content"><%= rs.getString("title") %></textarea>
+				<textarea class="form-control textarea" name="content"><%= rs.getString("content") %></textarea>
 			</div>
 			
 			<input class="btn btn-primary top" type="submit" value="修改" style="float: right">
 			<a href="show.jsp">
-				<input class="btn btn-primary top" type="button" value="返回" style="float: right">
+				<input class="btn btn-default top" type="button" value="返回" style="float: right;margin-right: 1%;">
 			</a>
 		</form>
 	

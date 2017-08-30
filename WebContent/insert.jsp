@@ -25,6 +25,9 @@
 			</div>
 			
 			<input class="btn btn-primary top" type="submit" value="添加" style="float: right">
+			<a href="show.jsp">
+				<input class="btn btn-default top" type="button" value="返回" style="float: right;margin-right: 1%;">
+			</a>
 		</form>
 	
 	</div>

@@ -13,10 +13,11 @@
 	int id = Integer.parseInt(request.getParameter("id"));
 	Class.forName("com.mysql.jdbc.Driver");
 	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","123456");
-	String sql = "delete from titles where ISBN = ?";
+	String sql = "delete from newses where id = ?";
 	PreparedStatement pre = con.prepareStatement(sql);
 	pre.setInt(1,id);
 	pre.executeUpdate();
+	session.setAttribute("message","新闻删除成功 ");
 	response.sendRedirect("show.jsp");
 %>
 </body>

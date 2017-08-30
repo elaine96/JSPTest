@@ -63,7 +63,7 @@
 	font-size: 2.5em;
 }
 
-#news > .onenews > a > p.title{
+#news > .onenews p.title{
 	width: 70%;
 	height: 2em;
 	float: left;
@@ -73,7 +73,7 @@
 	overflow: hidden;
 }
 
-#news > .onenews > a > .msgs{
+#news > .onenews .msgs{
 	width: 70%;
 	height: 2.6em;
 	float: left;
@@ -100,4 +100,22 @@
 #news > .pagination > li > a,
 #news > .pagination > li > span {
 	color: #5493e2 !important;
+}
+
+.news-box {
+	width: 60%;
+	margin: 40px 20%;
+	background-color: white;
+	min-height: 800px;
+	border-radius:20px;
+	padding: 40px;
+}
+
+.news-box h1 {
+	text-align: center;
+	font-size: 2.2em;
+}
+
+.news-box p {
+	font-size: 1.5em;
 }
